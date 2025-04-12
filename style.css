@@ -1,0 +1,245 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+header {
+  background-color: #333;
+  color: white;
+  padding: 5px;
+  text-align: center;
+}
+/*color scheme: #*/
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url('images/me-photo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0 20px;
+}
+
+/*animation*/
+.hero h1,
+.hero p,
+.hero a {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.hero p {
+  animation-delay: 0.3s;
+}
+
+.hero a {
+  animation-delay: 0.6s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.hero h1 {
+  font-size: 250px;
+  margin-bottom: 10px;
+  color:#ffee8c;
+}
+.hero h1{
+  font-size: clamp(80px, 20vw, 280px);
+}
+.hero p {
+  font-size: 15px;
+  margin-bottom: 30px;
+  padding: 0 15%;
+  color:beige
+}
+
+.hero-button {
+  padding: 10px 20px;
+  background-color: olivedrab;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.5s ease;
+}
+
+.hero-button:hover {
+  background-color: rgba(129, 168, 51, 0.73);
+}
+
+
+/*Navigation bar*/
+#navbar {
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  background-color: #5966b1;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #f6a230;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #fbcf41;
+  color: white;
+}
+
+@media screen and (max-width:600px){
+  #navbar{
+    display:none;
+  }
+}
+
+/*about*/
+#about{
+  padding: 60px 20px;
+  background-color:#f9f9f9
+}
+
+.about-container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.about-photo {
+  width: 300px;            /* increased size */
+  height: 300px;           /* same as width to make it square */
+  border-radius: 50%;      /* makes it circular */
+  overflow: hidden;        /* clip the image to the circle */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+
+.about-text {
+  flex:2 1 400px;
+}
+.about-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* ensures the image covers the container and remains centered */
+  display: block;
+}
+
+.about-text h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+.about-text p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #333;
+  margin-top: 15px;
+}
+
+
+
+.contact {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+
+}
+
+article {
+  padding: 10px;
+  margin: 10px;
+  background: yellow
+}
+
+div.sticky {
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  background-color: #cae8ca;
+  border: 2px solid #4CAF50;
+  padding-bottom: 2000px;
+}
+
+.button:active {
+  background-color: #ffbf00;
+}
+.button{
+  font-size: 16px;
+  padding: 14px 28px;
+  border-radius: 12px;
+  border: 2px solid #ffbf00;
+}
+
+/*Footer*/
+.footer {
+  background-color:olivedrab;
+  color:#fff;
+  padding: 30px 20px;
+}
+.footer-container {
+display:flex;
+justify-content: space-between;
+flex-wrap: wrap;
+max-width:1200px;
+margin:0 auto;
+}
+
+.footer-about,
+.footer-social {
+  margin-bottom: 20px;
+}
+.footer-about h3 {
+  margin: 0 0 10px;
+  font-size: 1.5em;
+}
+.footer-social a {
+  margin-right: 15px;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #fbcf41;
+}
+.footer-copy {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid #555;
+  padding-top: 15px;
+  font-size: 0.9em;
+}
+@media screen and (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.footer-social a {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #555;
+}
