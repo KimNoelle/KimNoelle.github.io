@@ -39,6 +39,7 @@ p{
       background-color: #a03c3c;
     }
 
+/*table of content*/    
     .toc {
       text-align: center;
       border: 2px solid #a03c3c;
@@ -68,8 +69,7 @@ p{
     }
 
 .toc button:hover {
-  text-decoration: underline;
-    background-color: #ba575998;
+  background-color: #a03c3c;
   color: white;
   transform: scale(1.05);
 }
@@ -80,6 +80,7 @@ p{
   color: white;
 }
 
+/*Recipes*/
     .section {
       background-color: #fff;
       margin: 2rem auto;
@@ -88,17 +89,31 @@ p{
       border: 1px solid #a03c3c;
     }
 
-    .section h2 {
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
-      color: #a03c3c;
-      font-family: 'Kalnia';
-    }
+.section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #a03c3c;
+  font-family: 'Kalnia';
+}
 
-    .ingredients, .instructions {
-      margin: 1rem 0;
-    }
+.ingredients, .instructions {
+  margin: 1rem 0;
+}
 
+.recipe-link {
+  display: inline-block;
+  margin-top: 20px;
+  color: #bc5152bd;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.recipe-link:hover {
+  color: #a03c3c;
+}
+
+
+    /*Footer*/
     footer {
       background-color: #a03c3c;
       color: white;
@@ -126,7 +141,7 @@ p{
 .footer-copy {
   text-align: center;
   margin-top: 20px;
-  border-top: 1px solid #555;
+  border-top: 1px solid #fdf5e5;
   padding-top: 15px;
   font-size: 0.9em;
 }
