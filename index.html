@@ -3,79 +3,113 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
     <title>My landing page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
   </head>
 
 <body>
   <header>
-    <h2>Welcome to my Portfolio Page</h2>
   </header>
-<section class="hero">
-  <h1>NOELLE</h1>
-  <p> Web Developer</p>
-  <a href="#about" class="hero-button">Learn More</a>
+<section class="hero" style="position: relative; height: 100vh; background: url('images/your-background-image.png') center/cover no-repeat;">
+  <div class="hero-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.3);"></div>
+
+  <h1>Noelle</h1>
+  
+  <p class="hero-subtitle" style="position: absolute; color: white; font-weight: bold; bottom: 10%; right: 10%; z-index: 3;">DESIGNER BASED IN TORONTO</p>
+  
+  <a href="#about" class="hero-button btn btn-primary" style="position: absolute; bottom: 5%; right: 10%; z-index: 3;">Explore</a>
 </section>
+
 
 <div id="navbar">
   <a class="active" href="javascript:void(0)">Home</a>
   <a href="#about">About Me</a>
   <a href="#portfolio">Portfolio</a>  
-  <a href="#about">About Me</a>
+  <a href="#design">Design</a>
+  <a href="#skills-bag">Skills</a>
   <a href="#contact">Contact</a>
 </div>
 
- 
+ <!--about section-->
 <section id="about">
   <div class="about-container">
+    <!--About page; photo-->
     <div class="about-photo">
       <img src="images/buisnesscard-no-background.png" alt="Photo of Noelle Kim">
     </div>
-
   <!--Text-->
-  <div class="about-text">
-  <h2>About Me</h2>
-  <p>
-    Hello, I am a human centered creative and developer in training. an individual looking to get into the creative fields. Freelance front end web development.
-    With a background in humanities and an interest for the creatives and an eye for detail. I love a pop of colour and incorporation joy into my work. Hi! I'm Noelle Kim! I come from a bckground in Human Servicsin Human Services and Psychology,
-    with experience supporting diverse populations and designing creative content.
-    Now, I'm on a journey to become a front-end web developer. I'm passionate about
-    combining creativity and empathy to build websites that feel good to use.I am an aspiring artist with keen interest in arts, design, web development, and other creatives. Having a background in Humanities and Psychology is an asset that I carry into every project I go into.
-  </p>
-  <p>
-    When I'm not coding, you'll find me sketching, exploring desing tools like Canva and Substance painter.
-  </p>
-  </div>
+  <section class="about">
+    <div class="about-text">
+    <h2>About Me</h2>
+
+    <p>Hi! I’m <strong>Noelle Kim!</strong> A human-centered creative and front-end developer in training.</p>
+    <p>With a background in Human Services and Psychology, I’ve spent years supporting diverse communities and designing thoughtful experiences that prioritize people’s needs.</p>
+    <p>Now, I’m channeling that same empathy and creativity into building joyful, accessible websites. I have an eye for detail, a love for bold color, and a passion for storytelling through design.</p>
+    <p>Whether I’m prototyping a portfolio or sketching a UI, I aim to create digital spaces that feel as good as they look.</p>
+    <p><em>Let’s build something meaningful — and maybe a little fun, too. 🎨✨</em></p>
+  </section>
+  <p>    When I'm not coding, you'll find me sketching or exploring design tools like Canva and Substance Painter  </p>
 </div>
 </section>
 
-<!--Portfolio section how to do it, like an album??-->
-<section id="portfolio">
-  <div class="portfolio-container">
-    <nav class="port-nav">
-      <ul>
-        <li></li>
-      </ul>
 
-    </nav>
+
+<section class="projects-page">
+  <div class="pojects-sidebar">
+    <h2>Projects</h2>
+    <ul class="project-list">
+      <li data-preview="img/prject1.jpg">Project: Graphic Design</li>
+      <li data-preview="img/prject1.jpg"> Project: Branding</li>
+      <li data-preview="img/prject1.jpg"> Project: UI/UX</li>
+      <li data-preview="img/prject1.jpg"> Project: Re-design</li>
+<!--add more as needed-->
+    </ul>
   </div>
-<h2>Portfolio</h2>
-<p>Compilation of professional and persoal projects</p>
+  <div class="project-preview">
+    <img id="preview-img" src="/img/default-thumbnail.jpg" alt="Project Preview" />
+  </div>
+
 </section>
 
 
+
+<!--Skills page-->
+<section id="skills">
   
+</section>
+
+<!--contact information page, include a drawing if i can-->
 <section id="contact">
 <div class="contact"> Contact information </div>
   <ul>
     <li>Email:noellekim747@gmail.com</li>
-    <li>Tel: 647.778.8961</li>
   </ul>
 </div>
+<div class="message-me">Message me here!</div>
+<form action="https://formspree.io/f/mldblpry" method="POST">
+    <label for="name">Your Name</label>
+    <input type="text" name="name" id="name" required>
+    <label for="email">Email Address</label>
+    <input type="email" name="email" id="email" required>
+    <label for="song">Your message here</label>
+    <textarea name="message" id="message" rows="8"></textarea>
+    <select name="reason" id="reason" required>
+      <option value="">-- Select an option --</option>
+      <option value="Furthur Information">Furthur Information</option>
+      <option value="General Inquiry">General Inquiry</option>
+      <option value="Leaving a Comment">Leaving a Comment</option>
+      <option value="Offer">Offer</option>
+    </select>
+    <button type="submit">Submit Message</button>
+</form>
 </section>
 
+<!--Footer page, to be on the base of the screens-->
 <footer class ="footer">
   <div class="footer-container">
   <div class="footer-about">
@@ -83,13 +117,12 @@
   <p>Creative web developer & artist.</p>
 </div>
 
-
-
   <div class="footer-social">
     <a href="https://www.instagram.com/hookedonpotatoes/" target="_blank">Crochet</li></a>
     <a href="https://www.instagram.com/n_o_eull/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
     <a href="https://sketchfab.com/noellekim" target="_blank"><i class="fa-solid fa-cube"></i></a>
     <a href="https://www.linkedin.com/in/noelle-kim-89015321a" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    <a href="recipe-book/index.html">📖 My Recipe Book</a>
     <a href="#contact"><i class="fa-solid fa-square-phone"></i></a>
   </div>
 
@@ -100,6 +133,22 @@
 
 </div>
 </footer>
+<!--Project menu-->
+<script>
+const listItems = document.querySelectorAll('.project-list li');
+const previewImage = document.getElementById('preview-img');
+
+listItems.forEach(item =>{
+  item.addEventListener('click', () => {
+    const newImg = item.getAttribute('data-preview');
+    previewImg.setAttribute('src',newImg);
+  })
+})
+</script>
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body> 
 </html>
 <!--landing page: "Get to know Noelle! click button"-->
