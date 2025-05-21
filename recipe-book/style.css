@@ -1,0 +1,168 @@
+   body {
+     margin: 0;
+     font-family: 'Georgia', serif;
+     background-color: #fdf5e5;
+     color: #3d1f1f;
+   }
+p{
+    font-family: 'Kalnia'
+  }
+
+  header {
+    background-color: #a03c3c;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+    font-family: 'Kalnia';
+  }
+
+    header h1 {
+      font-size: 3.5rem;
+      font-weight: normal;
+    }
+
+    .checkerboard {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 4px;
+      margin: 1rem 0;
+    }
+
+    .checkerboard div {
+      width: 100%;
+      padding-bottom: 100%;
+      background-color: #fdf5e5;
+    }
+
+    .checkerboard .filled {
+      background-color: #a03c3c;
+    }
+
+    .toc {
+      text-align: center;
+      border: 2px solid #a03c3c;
+      width: fit-content;
+      margin: 2rem auto;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      font-family: 'Kalnia';
+      font-weight: bold;
+    }
+
+    .toc ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .toc li {
+      margin: 0.5rem 0;
+    }
+
+    .toc button {
+      background: none;
+      border: none;
+      font: inherit;
+      color: #a03c3c;
+      cursor: pointer;
+    }
+
+.toc button:hover {
+  text-decoration: underline;
+    background-color: #ba575998;
+  color: white;
+  transform: scale(1.05);
+}
+
+.toc button:active {
+  transform: scale(0.98);
+  background-color: #a03c3c;
+  color: white;
+}
+
+    .section {
+      background-color: #fff;
+      margin: 2rem auto;
+      max-width: 800px;
+      padding: 1.5rem;
+      border: 1px solid #a03c3c;
+    }
+
+    .section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #a03c3c;
+      font-family: 'Kalnia';
+    }
+
+    .ingredients, .instructions {
+      margin: 1rem 0;
+    }
+
+    footer {
+      background-color: #a03c3c;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+ .footer-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-copy {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid #555;
+  padding-top: 15px;
+  font-size: 0.9em;
+}
+/*Adding new recipe*/  
+  .folder {
+    background-color: #ba575998;
+    border: 2px solid #a03c3c;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    position: relative;
+  }
+  
+  .folder h2 {
+    margin-top: 0;
+  }
+  
+  .recipe-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+  }
+.recipe-tabs:hover {
+  transform: translateY(-5px);
+}
+  
+.tab {
+  background-color: f9b5c2;
+  border: 2px solid #a03c3c;
+  padding: 8px 16px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  position: relative;
+}
+  
