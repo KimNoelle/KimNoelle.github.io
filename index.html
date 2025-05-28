@@ -9,29 +9,28 @@
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-
+    <link href='https://fonts.googleapis.com/css?family=Instrument Serif' rel='stylesheet'>
   </head>
 
 <body>
-  <header>
-  </header>
-<section class="hero" style="position: relative; height: 100vh; background: url('images/your-background-image.png') center/cover no-repeat;">
-  <div class="hero-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.3);"></div>
-
-  <h1>Noelle</h1>
-  
-  <p class="hero-subtitle" style="position: absolute; color: white; font-weight: bold; bottom: 10%; right: 10%; z-index: 3;">DESIGNER BASED IN TORONTO</p>
-  
-  <a href="#about" class="hero-button btn btn-primary" style="position: absolute; bottom: 5%; right: 10%; z-index: 3;">Explore</a>
+<section class="hero">
+<h1 class="hero-title">Noelle</h1>
+<img src="images/profile-hero.png" alt="Profile" class="hero-profile">
+  <div class="hero-content">
+    <div class="hero-row">
+      <p class="hero-subtitle">DESIGNER BASED IN TORONTO</p>
+      <a href="#about" class="hero-button">Explore</a>
+    </div>
+  </div>
 </section>
 
 
 <div id="navbar">
-  <a class="active" href="javascript:void(0)">Home</a>
+  <a class="active" href="javascript:void(0)">Noelle</a>
   <a href="#about">About Me</a>
-  <a href="#portfolio">Portfolio</a>  
-  <a href="#design">Design</a>
-  <a href="#skills-bag">Skills</a>
+  <a href="#portfolio">Projects</a>  
+  <a href="#resume">Resume</a>
+  <a href="#skills">Skills</a>
   <a href="#contact">Contact</a>
 </div>
 
@@ -53,63 +52,159 @@
     <p>Whether I’m prototyping a portfolio or sketching a UI, I aim to create digital spaces that feel as good as they look.</p>
     <p><em>Let’s build something meaningful — and maybe a little fun, too. 🎨✨</em></p>
   </section>
-  <p>    When I'm not coding, you'll find me sketching or exploring design tools like Canva and Substance Painter  </p>
+  <p>    When I'm not coding, you'll find me sketching or exploring design tools like Canva and Substance Painter</p>
+
+
 </div>
+    <a href="#portfolio" class="about-button">Check out my portfolio</a>
 </section>
 
 
+<section id="portfolio">
+<section class="projects">
+<div class="projects-sidebar">
+<h2>Projects</h2>
+<ul class="project-list">
+  <li data-preview="img/project1.jpg">
+    <a href="passionProjects/index.html">Passion Project 1</a>
+  </li>
+  <li data-preview="images/projectRecipe.png">
+    <a href="recipe-book/index.html">Passion Project: Recipe Book Website</a>
+  </li>
+  <li data-preview="img/project2.jpg">
+    <a href="redesigns/index.html">Re-design: Animal Shelter</a>
+  </li>
+  <li data-preview="img/project2.jpg">
+    <a href="work.html">Re-design: GoodReads</a>
+  </li>
+  <li data-preview="img/project2.jpg">
+    <a href="FairyPersona/index.html">Collaborated Project: Fairy Persona Quiz</a>
+  </li>
+  <li data-preview="images/project4.png">
+    <a href="Cathy-wedding/CathyWedding.html">Wedding Website</a>
+  </li>
+</ul>
+</div>
 
-<section class="projects-page">
-  <div class="pojects-sidebar">
-    <h2>Projects</h2>
-    <ul class="project-list">
-      <li data-preview="img/prject1.jpg">Project: Graphic Design</li>
-      <li data-preview="img/prject1.jpg"> Project: Branding</li>
-      <li data-preview="img/prject1.jpg"> Project: UI/UX</li>
-      <li data-preview="img/prject1.jpg"> Project: Re-design</li>
-<!--add more as needed-->
-    </ul>
-  </div>
   <div class="project-preview">
     <img id="preview-img" src="/img/default-thumbnail.jpg" alt="Project Preview" />
   </div>
 
 </section>
+</section>
 
+<!--Other Projects page-->
+<section class="projects-section">
+  <h2>OTHER PROJECTS</h2>
+
+  <div class="project-slider">
+    <div class="project-card">
+      <img src="images/project-1.png" alt="Project 1" />
+    </div>
+    <div class="project-card">
+      <img src="images/project-2.jpg" alt="Project 2" />
+    </div>
+    <div class="project-card">
+      <img src="images/project-3.png" alt="Project 3" />
+      <p class="caption">JULY 2025 ISSUE</p>
+    </div>
+        <div class="project-card">
+      <img src="images/project-4.pdf" alt="Project 3" />
+      <p class="caption">JULY 2025 ISSUE</p>
+    </div>
+        <div class="project-card">
+      <img src="images/project-5.pdf" alt="Project 3" />
+      <p class="caption">JULY 2025 ISSUE</p>
+    </div>
+      <div class="project-card">
+      <img src="images/project-2.2.jpg" alt="Project 3" />
+      <p class="caption">JULY 2025 ISSUE</p>
+    </div>
+
+    <!-- Add more cards as needed -->
+  </div>
+</section>
 
 
 <!--Skills page-->
 <section id="skills">
-  
+  <h2>Skills</h2>
+  <p>Enthusiastic<br>HARD WORKING</p>
+  <p>Critical thinking -Research Skills <br>-Problem-solving -Interdisciplinary  understanding <br>- Cross-cultural  competence <br>-Teaching and training <br>
+- Program Coordination -</p>
+<img id="skills-image" src="images/nycme.png">
+      <a href="#resume" class="hero-button">Resume <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#E7E7E7"><path d="M400-280v-400l200 200-200 200Z"/></svg></a>
 </section>
 
-<!--contact information page, include a drawing if i can-->
+
+                    <!--RESUME-->
+<section id="resume">
+  <div class="resume-container">
+
+    <div class="education">
+      <h3>Education</h3>
+      <ul>
+        <li>
+          <strong>Tyndale University</strong> — BA in Health & Human Services and Psychology  
+          <br><small>Graduated: 2022</small>
+        </li>
+      </ul>
+    </div>
+
+    <div class="experience">
+      <h3>Experience</h3>
+      <ul>
+        <li>
+          <strong>Intake Navigator, Saint Elizabeth Health</strong>  
+          <br><small>Dates: 2023 – 2024</small>  
+          <p>Supported patients and coordinated healthcare data and communication between departments.</p>
+        </li>
+        <li>
+          <strong>Sales Associate, Healthy Planet</strong>  
+          <br><small>Dates: 2022 – 2023</small>  
+          <p>Provided customer service and educated customers on natural health products.</p>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
+                <!--contact information page, include a drawing if i can-->
 <section id="contact">
-<div class="contact"> Contact information </div>
+<div class="contact"> 
+  <strong>/LET'S TALK/</strong>
   <ul>
-    <li>Email:noellekim747@gmail.com</li>
+    <li>Email: noellekim747@gmail.com</li>
   </ul>
 </div>
 <div class="message-me">Message me here!</div>
+
 <form action="https://formspree.io/f/mldblpry" method="POST">
     <label for="name">Your Name</label>
     <input type="text" name="name" id="name" required>
+    
     <label for="email">Email Address</label>
     <input type="email" name="email" id="email" required>
-    <label for="song">Your message here</label>
+
+    <label for="message">Your message here</label>
     <textarea name="message" id="message" rows="8"></textarea>
+
+    <label for="reason">Reason for Contact</label>
     <select name="reason" id="reason" required>
       <option value="">-- Select an option --</option>
-      <option value="Furthur Information">Furthur Information</option>
+      <option value="Furthur Information">Further Information</option>
       <option value="General Inquiry">General Inquiry</option>
       <option value="Leaving a Comment">Leaving a Comment</option>
       <option value="Offer">Offer</option>
     </select>
+
     <button type="submit">Submit Message</button>
 </form>
 </section>
 
-<!--Footer page, to be on the base of the screens-->
+                    <!--Footer page, to be on the base of the screens-->
 <footer class ="footer">
   <div class="footer-container">
   <div class="footer-about">
@@ -138,10 +233,10 @@
 const listItems = document.querySelectorAll('.project-list li');
 const previewImage = document.getElementById('preview-img');
 
-listItems.forEach(item =>{
-  item.addEventListener('click', () => {
+listItems.forEach(item =>{ 
+  item.addEventListener('mouseover', () => {
     const newImg = item.getAttribute('data-preview');
-    previewImg.setAttribute('src',newImg);
+    previewImage.setAttribute('src',newImg);
   })
 })
 </script>
