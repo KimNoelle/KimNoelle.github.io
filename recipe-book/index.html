@@ -27,94 +27,59 @@
     </div>
   </header>
 
-
-<!--tabs for categories-->
   <div class="toc">
-    <h2>Table of Contents</h2>
-    <ul>
-      <li><button onclick="renderRecipe(0)">Sourdough Basics</button></li>
-      <li><button onclick="renderRecipe(1)">🍞Sourdough Bread</button></li>
-      <li><button onclick="renderRecipe(2)">🍪Sourdough Chocolate Chip Cookies </button></li>
-      <li><button onclick="renderRecipe(3)">🍪 White Chocolate Matcha Cookies</button></li>   
-      <li><button onclick="renderRecipe(4)">Protein Brownies</button> </li> 
-    </ul>
-  </div>
+  <h2>Table of Contents</h2>
+  <ul id="recipeTOC"></ul>
+</div>
 
-  <section class="section" id="recipe-display">
-    <!-- Recipe will be rendered here by JavaScript -->
-  </section>
-
-  <main id="recipe-list"></main>
-
-
-    <nav class="tabs">
-    <button class="tab-button active" data-category="baking">Baking</button>
-    <button class="tab-button" data-category="cooking">Cooking</button>
-    <button class="tab-button" data-category="sourdough">Sourdough</button>
-  </nav>
+<section class="section" id="recipe-display">
+  <!-- Recipe will be rendered here by JavaScript -->
+</section>
 
 
 
-<!--adding new recipes to  folders -->
-  <div class="folder">
-    <h2>Recipes</h2>
-    <div class="recipe-tabs" id="recipeTabs">
-      <!-- Recipe tabs go here -->
-    </div>
-  </div>
+  <button id="addRecipeToggle">＋ Add New Recipe 🍓</button>
 
-  <div class="paper" id="recipeDisplay">
-    <h2>Recipe Details</h2>
-    <img id="recipeImage" class="recipe-img" src="" alt="" style="display: none;">
-    <h3 id="recipeTitle"></h3>
-    <ul id="ingredientList"></ul>
-    <p id="instructionText"></p>
-    <button id="editRecipeButton">Edit Recipe</button>
-  </div>
-
-  <button id="addRecipeToggle">＋ Add New Recipe</button>
-
-  <div id="addRecipeSection" class="hidden">
-    <h2 id="formTitle">Add a New Recipe</h2>
-    <form id="recipeForm">
-      <input type="text" id="title" placeholder="Recipe Name" required><br><br>
-      <textarea id="ingredients" placeholder="Ingredients (comma-separated)" required></textarea><br><br>
-      <textarea id="instructions" placeholder="Instructions" required></textarea><br><br>
-      <input type="file" id="photo" accept="image/*"><br><br>
-      <button type="submit">Save Recipe</button>
-    </form>
-  </div>
-
-
-
-  <!--Recipes-->
-    <section class="form-section">
+  <section id="addRecipeSection" style="display: none;">
     <h2>Add a New Recipe</h2>
-    <form id="recipe-form">
-      <input type="text" id="recipe-name" placeholder="Recipe Title" required>
-      <select id="recipe-category">
-        <option value="baking">Baking</option>
-        <option value="cooking">Cooking</option>
-        <option value="sourdough">Sourdough</option>
-      </select>
-      <textarea id="recipe-ingredients" placeholder="Ingredients" required></textarea>
-      <textarea id="recipe-instructions" placeholder="Instructions" required></textarea>
+    <form id="recipeForm">
+      <input type="text" id="recipeTitle" placeholder="Recipe Title" required><br><br>
+
+      <input type="text" id="recipeLink" placeholder="Link (optional)"><br><br>
+      <textarea id="ingredients" placeholder="Ingredients (comma-separated)" required></textarea><br><br>
+      <textarea id="instructions" placeholder="Instructions (one per line)" required></textarea>
+
+
       <button type="submit">Add Recipe</button>
     </form>
   </section>
-  <footer>
-    <p>♡ Favorite dishes. Homemade ♡</p>
-<div class="footer-links">
 
-  <a href="#old-faithfuls">✿ old faithfuls</a>
-  <a href="#sourdough">✿ sourdough</a>
-  <a href="#matcha">✿ matcha</a>
+
+  <footer>
+
+<div class="contacts">
+  <ul>
+    <li><strong>◆ Questions about recipes?</strong></li>
+    <li>◆ email | noellekim747@gmail.com</li>
+    <li>◆ instagram | @matchalfull</li>
+  </ul>
 </div>
+<div class="footer-bottom">
 <div class="footer-copy">
   <p> &copy; 2025 Noelle Kim. All Rights Reserved.<br>
     Hope you have a good day!
   </p>
 </div> 
+    <p>♡ Favorite dishes. Homemade ♡</p>
+<div class="footer-links">
+
+  <a href="#old-faithfuls">✿ old faithfuls</a>
+  <a href="https://www.youtube.com/channel/UCJWKwYSmO2K8debLJyv7m2w" target="_blank">✿ sourdough</a>
+  <a href="https://www.instagram.com/matchalfull/" target="_blank">✿ matcha</a>
+  <a href="../sourdough-timer-app/sourdough-timer.html">✿ scale converter</a>
+
+</div>
+</div>
   </footer>
 
 
